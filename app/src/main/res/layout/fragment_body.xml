@@ -1,0 +1,87 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nordicoverseas.nilutpol.autolab.Body">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_front"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_front" />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_back" />
+
+        <Button
+            android:id="@+id/btn_left"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_left" />
+
+        <Button
+            android:id="@+id/btn_right"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/body_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_output"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView_front"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:contentDescription="@string/body_front" />
+
+        <ImageView
+            android:id="@+id/imageView_back"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:contentDescription="@string/body_back" />
+
+        <ImageView
+            android:id="@+id/imageView_left"
+            android:layout_width="200dip"
+            android:layout_height="100dip"
+            android:contentDescription="@string/body_left" />
+
+        <ImageView
+            android:id="@+id/imageView_right"
+            android:layout_width="200dip"
+            android:layout_height="100dip"
+            android:contentDescription="@string/body_right" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
